@@ -7,7 +7,7 @@
 
 ### Error 1
 
-In the WrappedListComponent component, useState was used incorrectly and initial value given [] after correction.
+In the WrappedListComponent component, useState was used incorrectly and initial value given [] after correction. [setSelectedIndex,selectedIndex] changes to [selectedIndex, setSelectedIndex] As during destructuring the the current state resides first and then a function that updates the state.
 
 incorrect one:
 
@@ -74,7 +74,7 @@ isSelected={selectedIndex === index}
 
 ### Error 4
 
-In the WrappedSingleListItem component, onClickHandler is being called with an argument (index) , so its our 1st error . 
+In the WrappedSingleListItem component, onClickHandler is being called with an argument (index). onClickHandler(index) changes to ()=>onClickHandler(index) because  to create a new function that will be executed later when the user clicks on the element, which will then invoke the onClickHandler function with the appropriate index argument.
 
 incorrect one:
 
