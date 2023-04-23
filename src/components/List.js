@@ -10,7 +10,7 @@ const WrappedSingleListItem = ({ index, isSelected, onClickHandler, text }) => {
   return (
     <li
       style={{ backgroundColor: isSelected ? "green" : "red" }}
-      onClick={() => onClickHandler(index)} //ERROR 1 : onClickHandler(index) changes to ()=>onClickHandler(index) because  to create a new function that will be executed later when the user clicks on the element, which will then invoke the onClickHandler function with the appropriate index argument.
+      onClick={() => onClickHandler(index)} //ERROR 4 : onClickHandler(index) changes to ()=>onClickHandler(index) because  to create a new function that will be executed later when the user clicks on the element, which will then invoke the onClickHandler function with the appropriate index argument.
     >
       {text}
     </li>
@@ -29,7 +29,7 @@ const SingleListItem = memo(WrappedSingleListItem);
 // List Component
 
 const WrappedListComponent = ({ items }) => {
-  const [selectedIndex, setSelectedIndex] = useState([]); // ERROR 4:  -> [setSelectedIndex,selectedIndex] changes to [selectedIndex, setSelectedIndex] AS during destructuring the The current state resides first and then a function that updates the state.
+  const [selectedIndex, setSelectedIndex] = useState([]); // ERROR 1:  -> [setSelectedIndex,selectedIndex] changes to [selectedIndex, setSelectedIndex] AS during destructuring the The current state resides first and then a function that updates the state.
 
   // ERROR: 6 -> removing useEffect
 
