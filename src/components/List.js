@@ -29,7 +29,7 @@ const SingleListItem = memo(WrappedSingleListItem);
 // List Component
 
 const WrappedListComponent = ({ items }) => {
-  const [selectedIndex, setSelectedIndex] = useState([]); // ERROR 2:  -> [setSelectedIndex,selectedIndex] changes to [selectedIndex, setSelectedIndex] AS during destructuring the The current state resides first and then a function that updates the state.
+  const [selectedIndex, setSelectedIndex] = useState([]); // ERROR 4:  -> [setSelectedIndex,selectedIndex] changes to [selectedIndex, setSelectedIndex] AS during destructuring the The current state resides first and then a function that updates the state.
 
   // ERROR: 6 -> removing useEffect
 
@@ -69,7 +69,7 @@ const WrappedListComponent = ({ items }) => {
 WrappedListComponent.propTypes = {
   items: PropTypes.arrayOf(
     PropTypes.shape({
-      // ERROR 4 : Removing shapeOf to shape and array to arrayOf
+      // ERROR 5: Removing shapeOf to shape and array to arrayOf
       text: PropTypes.string,
     })
   ),
@@ -77,7 +77,7 @@ WrappedListComponent.propTypes = {
 
 WrappedListComponent.defaultProps = {
   items: [
-    // ERROR 5: Removing null and did modification as array of objects
+    // ERROR 2: Removing null and did modification as array of objects
     {
       id: 1,
       text: "MY NAME IS",
