@@ -1,7 +1,6 @@
 # Supriti-Vats_Front-End
-<<<<<<< HEAD
+
  Steeleye assignment using ReactJs
-=======
 
 #### Supriti Vats | 12007319 | supritivats123@gmail.com |
 
