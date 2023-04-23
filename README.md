@@ -2,6 +2,24 @@
 
 #### Supriti Vats | 12007319 | supritivats123@gmail.com |
 
+## EXPLAINATION OF THE LIST COMPONENT:
+The React, useState, useEffect, memo, and useCallback are imported from the React library, and PropTypes is imported from the prop-types package.
+
+The WrappedSingleListItem component is defined, which is responsible for rendering a single item in the list. It receives four props: index, isSelected, onClickHandler, and text. It renders an li element with a background color based on whether the item is selected or not. It also invokes the onClickHandler prop when clicked, passing in the item's index.
+
+The SingleListItem component is a memoized version of the WrappedSingleListItem component, which means it will only re-render if its props change.
+
+The WrappedListComponent component is defined, which is responsible for rendering the entire list. It receives one prop: items, an array of objects, each representing an item in the list. It initializes a state variable selectedIndex using the useState hook, which represents the currently selected item's index.
+
+The handleClick function is defined using the useCallback hook, which updates the selectedIndex state variable when an item is clicked.
+
+The WrappedListComponent component renders an unordered list (ul) with each item in the items array rendered as a SingleListItem component. It passes in the necessary props to each SingleListItem component, including the isSelected prop, which is determined based on whether the item's index matches the selectedIndex.
+
+The WrappedListComponent component is memoized using the memo function, which means it will only re-render if its props change.
+
+Finally, the List component is defined as a memoized version of the WrappedListComponent component, which will only re-render if its props change. The List component is then exported as the default export of the module.
+
+
 ## Total 6 Errors Found and Performed Optimization too
 
 
