@@ -37,26 +37,24 @@ items:null
 correct: 
 
  ```
-items: [                    
-    {
-      text: "I ",
+items: [
+  {
+      id: 1,
+      text: "MY NAME IS",
     },
     {
-      text: "Will",
+      id: 2,
+      text: "SUPRITI VATS",
     },
     {
-      text: "Take",
+      id: 3,
+      text: "ANS I AM EXCITED TO JOIN YOUR ESTEEMED ORGANIZATION",
     },
     {
-      text: "Placement",
+      id: 4,
+      text: "STEELEYE",
     },
-    {
-      text: "In",
-    },
-    {
-      text: "SteelEye",
-    },
-  ]
+  ],
  ```
 
 
