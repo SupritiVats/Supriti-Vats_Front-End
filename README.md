@@ -1,7 +1,5 @@
 # Supriti-Vats_Front-End
 
- Steeleye assignment using ReactJs
-
 #### Supriti Vats | 12007319 | supritivats123@gmail.com |
 
 ## Total 6 Errors Found.
@@ -37,8 +35,8 @@ items:null
 correct: 
 
  ```
-items: [
-  {
+items: [                    
+    {
       id: 1,
       text: "MY NAME IS",
     },
@@ -54,7 +52,7 @@ items: [
       id: 4,
       text: "STEELEYE",
     },
-  ],
+  ]
  ```
 
 
@@ -134,19 +132,22 @@ We can remove the above code.
  
 # Code Output after removing the error
 
+![AFTER ERROR FIXING](https://user-images.githubusercontent.com/97901522/233856290-2670eb71-f586-4edc-a8fc-96707a0afd62.png)
+
+
 
 # Code Optimization
 
 #### Before Optimization of code the WrappedSingleListItem renders multiple times when we click on the list item
 
+![BEFORE OPTIMIZATION](https://user-images.githubusercontent.com/97901522/233856355-bf4ca13a-9ec7-4858-82b3-7fdbcaa698ea.png)
 
 
 
 #### After Optimization of code the WrappedSingleListItem renders only 2 times when we click on the list item
 
+![AFTER OPTMIZATION](https://user-images.githubusercontent.com/97901522/233856470-4b5e0420-8b48-407f-9288-2b6bfbdc0263.png)
 
 
-
->>>>>>> c980c9467d3c33e835bf8fe9badba68ea4c22c24
 
 
